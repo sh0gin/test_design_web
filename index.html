@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="access/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="access/scripts/main.js"></script>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul class='header-container'>
+                <li><img class="header-logo" src="access/img/logo.svg" alt="логотип компании уютная кухня"></li>
+
+                <li>
+                    <ul class="header-menu">
+                        <li><a class="grey header-menu-active-link header-menu-active-link-first" href="#">Меню</a></li>
+                        <li><a class="brown header-menu-active-link header-menu-active-link-second" href="#">К
+                                бронированию</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <img class='hero-image' src="access/img/hero.svg" alt="изображение уютной кухни">
+        <h1 class="hero-title">Домашняя кухня в центре города</h1>
+        <p class="hero-subtitle">Бронируйте стол онлайн — мы подготовим всё к вашему приходу.</p>
+        <button class="button brown-button">Забронировать стол</button>
+
+        <a class="hero-booking" href="#booking"> Нравится атмосфера? <span class="brown">перейти к форме
+                бронирования</span></a>
+        <!-- SLIDER -->
+
+        <section class="gallery">
+
+            <div class="swiper gallery-slider">
+
+                <div class="swiper-wrapper">
+
+                    <!-- 9 изображений -->
+                    <div class="swiper-slide"><img src="access/img/food1.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food2.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food3.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food4.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food5.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food6.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food7.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food8.webp"></div>
+                    <div class="swiper-slide"><img src="access/img/food9.webp"></div>
+
+                </div>
+
+                <!-- стрелки -->
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>
+
+                <!-- точки -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+</body>
+
+</html>

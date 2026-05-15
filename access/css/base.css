@@ -1,0 +1,65 @@
+@import url('fonts.css');
+
+/* GENERAL STYLE */
+
+:root {
+    /* colors */
+    --brown: #C45C3E;
+    --header-grey: #5C5248;
+    --title-grey: #2C2416;
+    --white: #FFFFFF;
+    --background-color: #FAF6F1;
+    /* other */
+    --container: clamp(200px, 90%, 1824px);
+    
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.brown {
+    color: var(--brown);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+    width: var(--container);
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s;
+    color: var(--title-grey)
+}
+
+.button {
+    color: var(--white);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 8px;
+}
+
+/* COLORS */
+
+.brown {
+    color: var(--brown);
+}
