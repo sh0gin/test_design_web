@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Уютная кухня</title>
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="access/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="access/img/favicon.svg" type="image/svg+xml">
 </head>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="access/scripts/main.js"></script>
 
 <body>
     <header class="container">
@@ -22,7 +20,7 @@
                 <li>
                     <ul class="header-menu">
                         <li><a class="grey header-menu-active-link header-menu-active-link-first" href="#">Меню</a></li>
-                        <li><a class="brown header-menu-active-link header-menu-active-link-second" href="#">К
+                        <li><a class="brown header-menu-active-link header-menu-active-link-second" href="#booking">К
                                 бронированию</a></li>
                     </ul>
                 </li>
@@ -30,53 +28,155 @@
         </nav>
     </header>
     <main class="container">
-        <img class='hero-image' src="access/img/hero.svg" alt="изображение уютной кухни">
+        <img class='hero-image desktop-img' src="access/img/hero.svg" alt="изображение уютной кухни">
+        <img class='hero-image mobile-img' src="access/img/hero2.svg"
+            alt="изображение уютной кухни для мобильных устройств">
         <h1 class="hero-title">Домашняя кухня в центре города</h1>
         <p class="hero-subtitle">Бронируйте стол онлайн — мы подготовим всё к вашему приходу.</p>
-        <button class="button brown-button">Забронировать стол</button>
+        <a class="button brown-button" href="#booking">Забронировать стол</a>
 
-        <a class="hero-booking" href="#booking"> Нравится атмосфера? <span class="brown">перейти к форме
-                бронирования</span></a>
+        <div class="qn-link">
+            <span tabindex="0" class="text-question"> Нравится атмосфера? </span> <a href="#booking"
+                class="brown link-hero-booking">перейти к форме бронирования</a>
+        </div>
+
         <!-- SLIDER -->
 
-        <section class="gallery">
+        <div class="gallery">
 
-            <div class="swiper gallery-slider">
+            <div class="slider-wrapper">
 
-                <div class="swiper-wrapper">
+                <button class="swiper-button-prev ">‹</button>
 
-                    <!-- 9 изображений -->
-                    <div class="swiper-slide"><img src="access/img/food1.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food2.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food3.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food4.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food5.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food6.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food7.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food8.webp"></div>
-                    <div class="swiper-slide"><img src="access/img/food9.webp"></div>
+                <div class="swiper gallery-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="access/img/food1.webp"
+                                alt="Запечённое блюдо с овощами и сыром в форме для запекания"></div>
+                        <div class="swiper-slide"><img src="access/img/food2.webp"
+                                alt="Бумажный стаканчик кофе на светлом фоне"></div>
+                        <div class="swiper-slide"><img src="access/img/food3.webp"
+                                alt="Ассорти шоколада, орехов и сухофруктов на светлом столе"></div>
+                        <div class="swiper-slide"><img src="access/img/food4.webp"
+                                alt="Фасад уютного ресторана с уличной вывеской"></div>
+                        <div class="swiper-slide"><img src="access/img/food5.webp"
+                                alt="Овощной салат с зеленью и томатами в глубокой тарелке"></div>
+                        <div class="swiper-slide"><img src="access/img/food6.webp"
+                                alt="Приготовление мяса на гриле в ресторане"></div>
+                        <div class="swiper-slide"><img src="access/img/food7.webp" alt="Свежие булочки на тарелке">
+                        </div>
+                        <div class="swiper-slide"><img src="access/img/food8.webp"
+                                alt="Приготовление коктейля барменом"></div>
+                        <div class="swiper-slide"><img src="access/img/food9.webp"
+                                alt="Подача блюда с пастой и яйцом в ресторане"></div>
+                    </div>
+
 
                 </div>
 
-                <!-- стрелки -->
-                <button class="swiper-button-prev"></button>
-                <button class="swiper-button-next"></button>
-
-                <!-- точки -->
                 <div class="swiper-pagination"></div>
+                <button class="swiper-button-next">›</button>
 
             </div>
 
+        </div>
+
+        <section class="faq">
+            <h2 class="faq-title">Частые вопросы</h2>
+
+            <article class="faq-item">
+                <h2 class="faq-heading">
+                    <button class="faq-question">
+                        Часы работы
+                        <span class="icon">+</span>
+                    </button>
+                </h2>
+
+                <div class="faq-answer">
+                    Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00
+                </div>
+            </article>
+            <article class="faq-item">
+                <h2 class="faq-heading">
+                    <button class="faq-question">
+                        Как добраться
+                        <span class="icon">+</span>
+                    </button>
+                </h2>
+                <div class="faq-answer">
+                    м. Тверская, 5 минут пешком. Вход со двора, домофон 42.
+                </div>
+            </article>
+            <article class="faq-item">
+                <h2 class="faq-heading">
+                    <button class="faq-question">
+                        Детям и особые пожелания
+                        <span class="icon">+</span>
+                    </button>
+                </h2>
+
+                <div class="faq-answer">
+                    Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.
+                </div>
+            </article>
         </section>
 
+        <section class="booking" id="booking">
 
+            <h2 class="booking-title">
+                Бронирование стола
+            </h2>
 
+            <p class="booking-subtitle">
+                Заполните поля — перезвоним для подтверждения.
+            </p>
+
+            <form class="form-booking" id="booking-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">Имя</label>
+                    <input type="text" class="form-input" id="name" name="name" required
+                        placeholder="Введите ваше имя" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="surname">Фамилия</label>
+                    <input type="text" class="form-input" id="surname" name="surname" required
+                        placeholder="Введите вашу фамилию" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-input" id="email" name="email" required
+                        placeholder="Введите ваш email" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="phone">Телефон</label>
+                    <input type="tel" class="form-input" id="phone" name="phone" required
+                        placeholder="Введите ваш телефон" />
+                </div>
+
+                <button class="submit-btn" id="open" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </section>
     </main>
     <footer>
 
     </footer>
 
+    <div class="popup" id="popup">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2 class="title-pop">Заявка отправлена</h2>
+            <p class="text-pop">Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.</p>
 
+            <button id="close" class="pop-button">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="access/scripts/main.js" defer></script>
 
 </body>
 

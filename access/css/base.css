@@ -1,6 +1,9 @@
 @import url('fonts.css');
 
 /* GENERAL STYLE */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
     /* colors */
@@ -9,10 +12,16 @@
     --title-grey: #2C2416;
     --white: #FFFFFF;
     --background-color: #FAF6F1;
+    --green: #5C6B4A;
+    --white-grey: #E8DFD4;
+    
     /* other */
     --container: clamp(200px, 90%, 1824px);
-    
     font-family: 'Inter', sans-serif;
+}
+
+* {
+  caret-color: transparent;
 }
 
 body {
@@ -25,6 +34,10 @@ body {
 
 .grey {
     color: var(--grey);
+}
+
+button {
+  cursor: pointer;
 }
 
 img {
